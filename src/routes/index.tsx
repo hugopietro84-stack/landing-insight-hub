@@ -194,10 +194,8 @@ function Index() {
       {/* About */}
       <section id="sobre" className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid items-center gap-14 lg:grid-cols-2">
-          <div className="grid grid-cols-2 gap-4">
-            <img src={g1} alt="Corte masculino em execução" loading="lazy" width={800} height={800} className="h-full w-full object-cover" />
-            <img src={g3} alt="Ritual de barba com toalha quente" loading="lazy" width={800} height={800} className="h-full w-full object-cover" />
-            <img src={shopImg} alt="Interior da barbearia" loading="lazy" width={1200} height={912} className="col-span-2 h-56 w-full object-cover" />
+          <div className="flex h-96 items-center justify-center rounded-lg border border-dashed border-border bg-card/60 text-muted-foreground">
+            <span className="text-sm uppercase tracking-widest">foto da barbearia</span>
           </div>
           <div>
             <p className="eyebrow">Tradição desde 1994</p>
@@ -274,23 +272,8 @@ function Index() {
             Resultados <span className="text-gold">na cadeira</span>
           </h2>
         </div>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            [g2, "Cliente com corte degradê finalizado"],
-            [g1, "Detalhe do acabamento com máquina"],
-            [g3, "Barba sendo modelada"],
-            [g4, "Ferramentas clássicas de barbearia"],
-          ].map(([src, alt]) => (
-            <img
-              key={alt}
-              src={src}
-              alt={alt}
-              loading="lazy"
-              width={800}
-              height={800}
-              className="h-72 w-full object-cover grayscale transition-all duration-500 hover:grayscale-0"
-            />
-          ))}
+        <div className="mt-12 flex h-72 items-center justify-center rounded-lg border border-dashed border-border bg-card/60 text-muted-foreground">
+          <span className="text-sm uppercase tracking-widest">foto da barbearia</span>
         </div>
       </section>
 
